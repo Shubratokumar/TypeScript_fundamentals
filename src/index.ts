@@ -60,3 +60,18 @@
 
 
 // Advance topics
+
+// Aliases : usefull for DRY method as well as reuse causes
+type Employee = {
+    readonly id: number,
+    name: string,
+    retire: (date: Date) => void
+}
+
+let employee: Employee = {
+    id: 101,
+    name: "Shubrato",
+    retire: (date: Date) =>{
+        console.log(date);
+    }
+};
