@@ -28,10 +28,18 @@
 // enum Size { Small = 1 , Medium , Large } // we have to set the first element value later increase so on. If we set string value then we have to set explicitly. Rest of the number will set the compiler while compling the code.
 
 // declare enum with const generate more optimize code
-const enum Size { Small = 1 , Medium , Large }
+// const enum Size { Small = 1 , Medium , Large }
 
 //  use cases 
-let mySize: Size = Size.Medium;
-console.log(mySize);
+// let mySize: Size = Size.Medium;
+// console.log(mySize);
 
 
+// functions
+// always properly annotated a function
+function calculateTax (income: number, taxYear= 2022): number {
+    if(taxYear < 2022)
+        return income * 1.2;
+    return income * 1.3;
+}
+calculateTax(10_000, 2023);
