@@ -37,9 +37,26 @@
 
 // functions
 // always properly annotated a function
-function calculateTax (income: number, taxYear= 2022): number {
-    if(taxYear < 2022)
-        return income * 1.2;
-    return income * 1.3;
-}
-calculateTax(10_000, 2023);
+// function calculateTax (income: number, taxYear= 2022): number {
+//     if(taxYear < 2022)
+//         return income * 1.2;
+//     return income * 1.3;
+// }
+// calculateTax(10_000, 2023);
+
+// Objects
+
+// let employee :{
+//     readonly id: number,
+//     name: string,
+//     retire: (date: Date) => void
+// } = {
+//     id: 101,
+//     name: "Shubrato",
+//     retire: (date: Date) =>{
+//         console.log(date);
+//     }
+// };
+
+
+// Advance topics
