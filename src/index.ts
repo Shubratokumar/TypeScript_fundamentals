@@ -104,11 +104,20 @@
 // }
 
 
-// Literal (exact, specific)
+// Literal Types (exact, specific)
 
 // type Quantity = 50 | 100; // literal type
 // let quantity: Quantity = 50;
 
 // type Metric = 'cm' | 'inch'; // also a literal type
 
-// 
+// Nullable Types
+
+// function greet(name: string | null | undefined) {
+//     if(name)
+//         console.log(name.toUpperCase());
+//     else
+//         console.log('Hola!');
+// }
+// greet(null);
+// greet(undefined);
