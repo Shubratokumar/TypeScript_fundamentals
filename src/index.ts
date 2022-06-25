@@ -90,15 +90,25 @@
 
 // Intersections (&)
 
-type Draggable ={
-    drag: () => void
-}
-type Resizable ={
-    resize: () => void
-}
-type UIWidget = Resizable & Draggable; // intersection type
+// type Draggable ={
+//     drag: () => void
+// }
+// type Resizable ={
+//     resize: () => void
+// }
+// type UIWidget = Resizable & Draggable; // intersection type
 
-let bannerBox: UIWidget ={
-    drag: () => {},
-    resize: () => {}
-}
+// let bannerBox: UIWidget ={
+//     drag: () => {},
+//     resize: () => {}
+// }
+
+
+// Literal (exact, specific)
+
+// type Quantity = 50 | 100; // literal type
+// let quantity: Quantity = 50;
+
+// type Metric = 'cm' | 'inch'; // also a literal type
+
+// 
