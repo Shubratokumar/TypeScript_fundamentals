@@ -1,4 +1,3 @@
 "use strict";
-var age = 25;
-var firstName = "Shubrato";
+let user = [1, "shubrato"];
 //# sourceMappingURL=index.js.map
