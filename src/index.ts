@@ -62,16 +62,28 @@
 // Advance topics
 
 // Aliases : usefull for DRY method as well as reuse causes
-type Employee = {
-    readonly id: number,
-    name: string,
-    retire: (date: Date) => void
-}
+// type Employee = {
+//     readonly id: number,
+//     name: string,
+//     retire: (date: Date) => void
+// }
 
-let employee: Employee = {
-    id: 101,
-    name: "Shubrato",
-    retire: (date: Date) =>{
-        console.log(date);
-    }
-};
+// let employee: Employee = {
+//     id: 101,
+//     name: "Shubrato",
+//     retire: (date: Date) =>{
+//         console.log(date);
+//     }
+// };
+
+// Union type
+
+function kgToLbs(weight: number | string):number {
+    //  Narrowing
+    if(typeof weight === "number")
+        return weight * 2.2; // access all number methods
+    else
+        return parseInt(weight) * 2.2; // access all string methods
+}
+kgToLbs(20);
+kgToLbs('20kg');
