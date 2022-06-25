@@ -76,14 +76,29 @@
 //     }
 // };
 
-// Union type
+// Union type (|)
 
-function kgToLbs(weight: number | string):number {
-    //  Narrowing
-    if(typeof weight === "number")
-        return weight * 2.2; // access all number methods
-    else
-        return parseInt(weight) * 2.2; // access all string methods
+// function kgToLbs(weight: number | string):number {
+//     //  Narrowing
+//     if(typeof weight === "number")
+//         return weight * 2.2; // access all number methods
+//     else
+//         return parseInt(weight) * 2.2; // access all string methods
+// }
+// kgToLbs(20);
+// kgToLbs('20kg');
+
+// Intersections (&)
+
+type Draggable ={
+    drag: () => void
 }
-kgToLbs(20);
-kgToLbs('20kg');
+type Resizable ={
+    resize: () => void
+}
+type UIWidget = Resizable & Draggable; // intersection type
+
+let bannerBox: UIWidget ={
+    drag: () => {},
+    resize: () => {}
+}
