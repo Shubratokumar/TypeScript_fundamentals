@@ -1,8 +1,9 @@
-let sales = 123456789;
-let course: string = "TypeScript";
-let is_Published: boolean = true;
-let level;
+// let numbers: number[] = [1, 2, 3];
+// we can set any type as any array but when we set annotation number then the compiler caught an error.
+// let numbers: number[] = [];
+// numbers[0] = 2;
+// numbers[1] = '2'; // invalid
 
-function render(document){
-    console.log(document)
-}
+// inteligence features
+let numbers: number[] = [];
+numbers.forEach(n => n.toString)
